@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+        }
+        nav {
+            margin-top: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .article {
+            flex: 2;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .comment-section {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+        }
+        button {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Sederhana</h1>
+    </header>
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Artikel</a>
+        <a href="#">Kategori</a>
+        <a href="#">Kontak</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="article">
+                <h2>Judul Artikel</h2>
+                <p>Ini adalah isi artikel contoh untuk blog ini.</p>
+                <div class="comment-section">
+                    <h3>Komentar</h3>
+                    <input type="text" placeholder="Nama">
+                    <textarea placeholder="Tulis komentar..."></textarea>
+                    <button>Kirim</button>
+                </div>
+            </div>
+            <div class="sidebar">
+                <h3>Kategori</h3>
+                <ul>
+                    <li><a href="#">Teknologi</a></li>
+                    <li><a href="#">Bisnis</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                </ul>
+                <h3>Arsip</h3>
+                <ul>
+                    <li><a href="#">Maret 2025</a></li>
+                    <li><a href="#">Februari 2025</a></li>
+                    <li><a href="#">Januari 2025</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
